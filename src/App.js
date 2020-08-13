@@ -5,18 +5,14 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Wrapper from './components/Wrapper'
 import Sider from './components/Sider'
+import Discover from './pages/Discover'
 
 
 
 function App() {
   return (
     <div className="app">
-        <Header />
-        <Sider />
-        <Wrapper>
-          <About/>
-        </Wrapper>
-        <Footer />
+      <Discover />
       </div>
   );
 }
