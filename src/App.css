@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* CSS FOR THE BODY/SIDER/HEADER */
+
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout-sub-header-background {
+  background: rgb(37, 39, 128);
+}
+
+.site-layout-background {
+  background: #fff;
 }
