@@ -11,7 +11,7 @@ export default function HeaderComp() {
       subTitle
       extra={[
         <Button onClick={()=> {window.location.href = "/About"}} key="3">About</Button>,
-        <Button onClick={()=> {window.location.href = "/Discover"}} key="2">Discover</Button>,
+        <Button onClick={()=> {window.location.href = "/Portfolio"}} key="2">Portfolio</Button>,
       ]}
       />
       
