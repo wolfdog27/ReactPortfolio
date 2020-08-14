@@ -1,28 +1,34 @@
-import React from "react";
-import { Layout, Menu } from 'antd';
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import React, {Component} from "react";
+import { Layout} from 'antd';
+import AnimalCardComp from "../components/animalCard"
+import './Discover.css'
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Content } = Layout;
 
 
-function Discover() {
-    return (
+class Discover extends Component {
+state={
+  dogs:[],
+  cats:[]
+}
 
-<Layout>
-    
+
+render(){
+  return (
+
     <Layout>
-      <Header className="site-layout-sub-header-background" style={{ padding: 0 }}>
-          <h1 class="pupsterTitle">Pawsitivity</h1>
-      </Header>
-      <Content style={{ margin: '24px 16px 0' }}>
-        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-          Can we put cards here?
-        </div>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+
+
+
+
+        <Content style={{ margin: '24px 16px 0' }}>
+          <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+            <AnimalCardComp  name={"Mochi"} imageSrc = {"https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg" }   />
+          </div>
+        </Content>
+  
     </Layout>
-  </Layout>
-    );
+  );}
 }
 
 export default Discover;

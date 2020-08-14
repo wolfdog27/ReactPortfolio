@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
-import { Layout } from 'antd';
-import "./style.css";
+import React from 'react'
+import { PageHeader, Button, } from 'antd';
 
-const { Header } = Layout;
 
-export default class HeaderComp extends Component {
-    render() {
-        return (
-
-                   <Header className="site-layout-sub-header-background" style={{ padding: 0 }}>
-                       <h1 class="h1Head">Pupster</h1>
-                   </Header>
-
-        )
-    }
+export default function HeaderComp() {
+    return (
+    
+        <PageHeader
+      className="site-page-header-responsive"
+      title="Kyle Nicholas Anderson"
+      extra={[
+        <Button onClick={()=> {window.location.href = "/About"}} key="3">About</Button>,
+        <Button onClick={()=> {window.location.href = "/Discover"}} key="2">Discover</Button>,
+      ]}
+      />
+      
+    )
 }

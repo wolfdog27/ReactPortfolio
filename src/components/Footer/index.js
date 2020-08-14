@@ -1,16 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Layout} from 'antd';
 
-import { Layout } from 'antd';
 const { Footer } = Layout;
 
-export default class FooterComp extends Component {
-    render() {
-        return (
-         
-                 <Footer style={{ textAlign: 'center' }}>Ant Design © 2020 Created by KNA</Footer>
-          
-        )
-    }
+export default function FooterComp() {
+    return (
+      
+        <Footer style={{ textAlign: 'center', height: 'calc(100vh - 55)' }}>KNA Design © 2020</Footer>
+ 
+    )
 }
-
-

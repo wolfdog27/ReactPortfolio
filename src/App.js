@@ -1,20 +1,35 @@
 import React from 'react';
 import './App.css';
-import About from './pages/About';
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Wrapper from './components/Wrapper'
-import Sider from './components/Sider'
-import Discover from './pages/Discover'
-
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from "./pages/About"
+import Search from './pages/Search';
+import Discover from './pages/Discover';
+import HeaderComp from "./components/Header"
+import FooterComp from "./components/Footer"
 
 function App() {
   return (
-    <div className="app">
-      <Discover />
-      </div>
+    <Router> 
+      <HeaderComp/>
+    <Switch>
+      <Route path="/about">
+        <About/>
+      </Route>
+      <Route path = "/discover">
+        <Discover/>
+      </Route>
+      <Route path = "/search">
+        <Search/>
+      </Route>
+      <Route exact path="/">
+        <About/>
+      </Route>
+    </Switch>
+    <FooterComp />
+  </Router>
   );
 }
+
+
 
 export default App;

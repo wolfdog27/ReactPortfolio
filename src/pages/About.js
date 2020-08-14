@@ -1,34 +1,23 @@
-import React from "react";
+import React from 'react'
 import { Layout} from 'antd';
-import Body from '../components/Body'
-import SiderComp from '../components/Sider'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import './Discover.css'
+
+const { Content} = Layout;
 
 
-
-function About() {
+export default function About() {
   return (
+    <Layout>
 
-<h1>Hello World</h1>
+   
 
-  );
+
+      <Content style={{ margin: '24px 16px 0' }}>
+        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+          <h1>Hello About Page</h1>
+        </div>
+      </Content>
+
+  </Layout>
+  )
 }
-
-export default About;
-
-
-// function About() {
-//   return (
-//     <div>
-//       <Layout>
-//         <SiderComp/>
-//         <Layout>
-//           <Header />
-//           <Body />
-//           <Footer />
-//         </Layout>
-//       </Layout>
-//     </div>
-//   );
-// }

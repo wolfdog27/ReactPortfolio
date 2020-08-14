@@ -1,6 +1,5 @@
-.h1Head {
-    font-size: x-large;
-    color: whitesmoke;
-    background-color: blue;
-}
+.site-layout-sub-header-background {
+    background: rgb(8, 40, 142);
+    justify-content: center;
+  }
 
