@@ -8,6 +8,7 @@ export default function HeaderComp() {
         <PageHeader
       className="site-page-header-responsive"
       title="Kyle Nicholas Anderson"
+      subTitle
       extra={[
         <Button onClick={()=> {window.location.href = "/About"}} key="3">About</Button>,
         <Button onClick={()=> {window.location.href = "/Discover"}} key="2">Discover</Button>,
